@@ -50,7 +50,7 @@ Fluxo simples de aplicação do design pattern Chain of Responsibility.
 ```
 
 - Exemplo de retorno:
-  - O atribute trace, indica as classes da corrente de responsabilidade que foram executadas.
+  - O atributo trace, indica as classes da corrente de responsabilidades que foram executadas.
 ```json
 {
     "data": {
