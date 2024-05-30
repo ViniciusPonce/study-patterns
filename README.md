@@ -1,5 +1,7 @@
 # Estudo de padrões de projeto
 
+Este repositório contém exemplos de implementação de alguns padrões de projeto em PHP com Laravel.
+
 ## Chain of Responsibility
 
 Fluxo simples de aplicação do design pattern Chain of Responsibility.
