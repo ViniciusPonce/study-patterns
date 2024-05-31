@@ -12,8 +12,8 @@ class PaymentController extends Controller
     {
         $input = collect($request->validated());
 
-        $chainService = app(PaymentServiceInterface::class);
-        $response = $chainService->flowProcessPayment(order: $input);
+        $paymentService = app(PaymentServiceInterface::class);
+        $response = $paymentService->flowProcessPayment(order: $input);
 
         return new PaymentResponse(data: $response);
     }
