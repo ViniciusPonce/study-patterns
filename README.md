@@ -63,3 +63,7 @@ Fluxo simples de aplicação do design pattern Chain of Responsibility.
     "status": 200
 }
 ```
+
+- Estrutura basica
+
+<img src="https://i.imgur.com/HvgTVjI.png" alt=""/>
