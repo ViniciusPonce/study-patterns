@@ -16,10 +16,10 @@ class CustomerOrderHandler implements OrderHandlerInterface
 
     public function handle(Collection $order): Collection
     {
-        $order = $this->customerHandler($order);
+        $order = $this->customerHandler(order: $order);
 
         if ($this->successor) {
-            return $this->successor->handle($order);
+            return $this->successor->handle(order: $order);
         }
 
         return $order;

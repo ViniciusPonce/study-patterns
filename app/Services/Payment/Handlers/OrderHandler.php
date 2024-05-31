@@ -23,6 +23,6 @@ class OrderHandler
 
     public function handle(Collection $order): Collection
     {
-        return $this->handler->handle($order);
+        return $this->handler->handle(order: $order);
     }
 }

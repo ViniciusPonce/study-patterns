@@ -11,7 +11,7 @@ class PaymentService implements PaymentServiceInterface
 {
     public function flowProcessPayment(Collection $order): array
     {
-        $order = $this->handlerOrderPayment($order);
+        $order = $this->handlerOrderPayment(order: $order);
 
         return [
             'message' => 'Payment processed successfully with the following Chain of Responsibility trace',
@@ -24,6 +24,6 @@ class PaymentService implements PaymentServiceInterface
         $orderHandler = new OrderHandler();
         $order->put('trace', []);
 
-        return $orderHandler->handle($order);
+        return $orderHandler->handle(order: $order);
     }
 }

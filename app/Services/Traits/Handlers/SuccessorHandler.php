@@ -25,7 +25,7 @@ trait SuccessorHandler
             }
 
             $newHandler = new $handler();
-            $lastHandler->setSuccessor($newHandler);
+            $lastHandler->setSuccessor(param: $newHandler);
             $lastHandler = $newHandler;
         }
     }

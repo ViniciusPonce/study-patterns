@@ -16,10 +16,10 @@ class PaymentOrderHandler implements OrderHandlerInterface
 
     public function handle(Collection $order): Collection
     {
-        $order = $this->paymentHandler($order);
+        $order = $this->paymentHandler(order: $order);
 
         if ($this->successor) {
-            return $this->successor->handle($order);
+            return $this->successor->handle(order: $order);
         }
 
         return $order;

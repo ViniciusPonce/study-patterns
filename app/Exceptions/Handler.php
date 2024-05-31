@@ -37,6 +37,6 @@ class Handler extends ExceptionHandler
             'status' => $status,
         ];
 
-        return response()->json($reponse, $status);
+        return response()->json(data: $reponse, status: $status);
     }
 }
